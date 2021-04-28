@@ -1,0 +1,17 @@
+{
+    "name": "Just the Recipe",
+    "description": "Ignores all the SEO b.s. and gives you the recipe",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "permissions": [
+      "tabs",
+    "http://*/*","https://*/*"
+    ],
+    "content_scripts" : [
+        {
+          "matches": [ "<all_urls>" ],
+          "css": ["sidebar.css"],
+          "js": ["content.js"]
+        }
+      ]
+  }
